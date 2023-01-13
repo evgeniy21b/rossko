@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class Elements {
 
-    protected WebDriver driver;
+    protected WebDriver driver; // driver
     private WebElement fieldFullName;
     private WebElement fieldEmail;
     private WebElement fieldCurAdress;
