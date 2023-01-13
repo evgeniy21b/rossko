@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class Tests extends BaseTest {
 
 
-    @BeforeEach //Проходит ПЕРЕД каждым тестом
+    @BeforeEach //Проходит ПЕРЕД каждым тестом фывы
     public void beforeEach() {
         chromeDriver.get("https://demoqa.com/text-box");
     }

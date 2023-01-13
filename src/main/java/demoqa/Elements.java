@@ -25,7 +25,7 @@ public class Elements {
 
     }
 
-    public void textBox() {
+    public void textBox() { // только textbox
         fieldFullName.click();
         fieldFullName.sendKeys("Evgeniy Vegan");
         fieldEmail.click();
