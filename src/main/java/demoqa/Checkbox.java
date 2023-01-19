@@ -16,7 +16,7 @@ public class Checkbox {
 
     }
 
-    public void checkBox() { // только
+    public void checkBox() {
     checkBoxIcon.click();
     }
 

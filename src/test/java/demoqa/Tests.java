@@ -23,4 +23,11 @@ public class Tests extends BaseTest {
         Checkbox elements = new Checkbox(chromeDriver);
          elements.checkBox();
     }
+
+    @Test
+    void demoqa2() {
+        chromeDriver.get("https://demoqa.com/radio-button");
+        Radiobutton elements = new Radiobutton(chromeDriver);
+        elements.radioButton();
+    }
 }
