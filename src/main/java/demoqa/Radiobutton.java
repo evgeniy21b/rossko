@@ -12,13 +12,13 @@ public class  Radiobutton {
 
     public Radiobutton(WebDriver driver) {
         this.driver = driver;
-        RadiobuttonIcon = driver.findElement(By.id("yesRadio"));  // надо поправить xpath
+        RadiobuttonIcon = driver.findElement(By.id("yesRadio"));
 
 
     }
 
     public void radioButton() {
-        WebElement webElement = driver.findElement(By.id("yesRadio"));
+        WebElement webElement = RadiobuttonIcon;
         Actions RadiobuttonIcon = new Actions(driver);
         RadiobuttonIcon.moveToElement(webElement).click(webElement);
         RadiobuttonIcon.perform();
