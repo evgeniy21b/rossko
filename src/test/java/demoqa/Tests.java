@@ -30,4 +30,11 @@ public class Tests extends BaseTest {
         Radiobutton elements = new Radiobutton(chromeDriver);
         elements.radioButton();
     }
+
+    @Test
+    void demoqa3() {
+        chromeDriver.get("https://demoqa.com/webtables");
+        WebTables elements = new WebTables(chromeDriver);
+        elements.webTables();
+    }
 }

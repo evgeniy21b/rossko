@@ -15,12 +15,12 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver",System.getenv("CHROME_DRIVER"));
         chromeDriver = new ChromeDriver();
         chromeDriver.manage().window().maximize();
-        chromeDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        chromeDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        chromeDriver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
+        //chromeDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //chromeDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        //chromeDriver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
     }
 
-    @AfterEach
+    //@AfterEach
     public void closeBellTest(){ //Закрытие браузера
         chromeDriver.quit();
     }
