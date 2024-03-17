@@ -32,9 +32,16 @@ public class Tests extends BaseTest {
     }
 
     @Test
-    void demoqa3() {
+    void demoqa3()  {
         chromeDriver.get("https://demoqa.com/webtables");
         WebTables elements = new WebTables(chromeDriver);
         elements.webTables();
+    }
+
+    @Test
+    void demoqa4()  {
+        chromeDriver.get("https://demoqa.com/webtables");
+        WebTablesAdd elements = new WebTablesAdd(chromeDriver);
+        elements.webTablesAdd();
     }
 }
