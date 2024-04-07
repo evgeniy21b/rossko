@@ -1,47 +1,44 @@
 package demoqa;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import rossko.*;
 
 public class Tests extends BaseTest {
 
 
-    //@BeforeEach //Проходит ПЕРЕД каждым тестом
-    public void beforeEach() {
-        chromeDriver.get("https://demoqa.com/text-box");
+
+
+    @Test
+    void partnumberSearchMagnifier()  {
+        chromeDriver.get("https://rossko.ru/");
+        InputWithMagnifier elements = new InputWithMagnifier (chromeDriver);
+        elements.inputWithMagnifier();
     }
 
     @Test
-    void demoqa() {
-        chromeDriver.get("https://demoqa.com/text-box");
-        Elements elements = new Elements(chromeDriver);
-        elements.textBox();
+    void vinAutoMazdaSearch()  {
+        chromeDriver.get("https://rossko.ru/");
+        InputWithVinMazda elements = new InputWithVinMazda (chromeDriver);
+        elements.inputWithVinMazda();
     }
 
     @Test
-     void demoqa1() {
-        chromeDriver.get("https://demoqa.com/checkbox");
-        Checkbox elements = new Checkbox(chromeDriver);
-         elements.checkBox();
+    void vinAutoRenaultSearch()  {
+        chromeDriver.get("https://rossko.ru/");
+        InputWithVinRenault elements = new InputWithVinRenault (chromeDriver);
+        elements.inputWithVinRenault();
     }
 
     @Test
-    void demoqa2() {
-        chromeDriver.get("https://demoqa.com/radio-button");
-        Radiobutton elements = new Radiobutton(chromeDriver);
-        elements.radioButton();
+    void vinAutoKiaSearch()  {
+        chromeDriver.get("https://rossko.ru/");
+        InputWithVinKia elements = new InputWithVinKia(chromeDriver);
+        elements.inputWithVinKia();
     }
-
     @Test
-    void demoqa3()  {
-        chromeDriver.get("https://demoqa.com/webtables");
-        WebTables elements = new WebTables(chromeDriver);
-        elements.webTables();
-    }
-
-    @Test
-    void demoqa4()  {
-        chromeDriver.get("https://demoqa.com/webtables");
-        WebTablesAdd elements = new WebTablesAdd(chromeDriver);
-        elements.webTablesAdd();
+    void howFindVin()  {
+        chromeDriver.get("https://rossko.ru/");
+        ButtonHowFindVin elements = new ButtonHowFindVin(chromeDriver);
+        elements.buttonHowFindVIN();
     }
 }
