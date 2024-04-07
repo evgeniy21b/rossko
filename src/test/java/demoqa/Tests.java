@@ -1,5 +1,4 @@
 package demoqa;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import rossko.*;
 
@@ -40,5 +39,26 @@ public class Tests extends BaseTest {
         chromeDriver.get("https://rossko.ru/");
         ButtonHowFindVin elements = new ButtonHowFindVin(chromeDriver);
         elements.buttonHowFindVIN();
+    }
+
+    @Test
+    void popularProductsOil()  {
+        chromeDriver.get("https://rossko.ru/");
+        ButtonPopularProductsOil elements = new ButtonPopularProductsOil(chromeDriver);
+        elements.buttonPopularProductsOil();
+    }
+
+    @Test
+    void popularProductsSparkPlugs()  {
+        chromeDriver.get("https://rossko.ru/");
+        ButtonPopularProductsSparkPlugs elements = new ButtonPopularProductsSparkPlugs(chromeDriver);
+        elements.buttonPopularProductsSparkPlugs();
+    }
+
+    @Test
+    void BoxFeedbackFormTest()  {
+        chromeDriver.get("https://rossko.ru/");
+        BoxFeedbackForm elements = new BoxFeedbackForm(chromeDriver);
+        elements.BoxFeedbackForm();
     }
 }
